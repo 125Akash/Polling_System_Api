@@ -52,3 +52,38 @@ if you want to and think there’s extra time, you can create authentication
     }
     ]
 }
+
+
+Answer for above questions 
+First i have craete a an api which actively runing on render who's extension is https://polling-system-api-avaf.onrender.com
+and which is working on Postman 
+step 1 - copy the url https://polling-system-api-avaf.onrender.com/api/v1/question/create (to create the question ) request must be POST
+step 2 - copy the url https://polling-system-api-avaf.onrender.com/api/v1/question/view/id ( id = Your question id ) request msut be GET
+step 3 - copy the url https://polling-system-api-avaf.onrender.com/api/v1/options/id  to vote the quetion , id is your question option id
+step 4 - https://polling-system-api-avaf.onrender.com/api/v1/question/options/id/create id is your question id 
+step 5 - https://polling-system-api-avaf.onrender.com/api/v1/options/delete/id .....id is your question ooption id
+step 6 - https://polling-system-api-avaf.onrender.com/api/v1/question/delete/id ...... id is your question id
+
+
+
+To use this Api is your local machine you can download the zip file and extrat the file and then after run npm install to install node dependencies and  in config section you have to provide your data base link/url 
+after that npm start comand is run in your terminal 
+it is running the server on port 3000
+and coonect to your msg is showed then u is good to go on postman 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
