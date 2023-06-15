@@ -9,7 +9,7 @@ module.exports.create=async function(req,res){
         // 
     })
     // it is for adding the vote to option of the id that is given by mongodb by update query and using the string interpolition
-    const updateOpt=await Option.findByIdAndUpdate(opt._id,{"add_vote":`http://localhost:3000/api/v1/options/${opt._id}/add_vote`}) //yha pr problem h ⛔⛔
+    const updateOpt=await Option.findByIdAndUpdate(opt._id,{"add_vote":`https://polling-system-api-avaf.onrender.com/api/v1/options/${opt._id}/add_vote`}) //yha pr problem h ⛔⛔
     // important step to do o/w code updates will not be saved
     updateOpt.save()
     // now searching the question so that we can append the option in question-->option array
